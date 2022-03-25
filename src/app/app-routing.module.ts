@@ -6,7 +6,8 @@ const routes: Routes = [
   {path: 'login',component: LoginComponent,
   children: [
     {path: 'login',component: LoginComponent}
-  ]}
+  ]},
+  {path: '',component:LoginComponent}
 ];
 
 @NgModule({
