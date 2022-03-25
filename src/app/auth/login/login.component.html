@@ -1,0 +1,23 @@
+<div class="container vh-100">
+    <div class="row justify-content-center h-100">
+        <div class="login">
+            <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="example-form">
+                <div class="logo">
+                    <span class="brand">BRAND NAME HERE</span>
+                </div>
+                
+                  <span *ngIf="userName && userName.invalid" >This input is invalid</span>
+   
+                  <input  class="input" placeholder="Username" formControlName='userName' required/>
+
+                    <input type = "password"  class="input" placeholder="Password" formControlName='password' required>
+             
+                <input type="submit" class="btn btn-primary w-100" value="Login" name="">
+                  
+            </form>
+            <div class="sign-up">
+                <small><a routerLink="../forgot-password">Sign Up</a></small>
+            </div>
+        </div>
+    </div>
+</div>
